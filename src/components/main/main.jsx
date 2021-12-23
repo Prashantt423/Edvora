@@ -77,7 +77,7 @@ export default function Main(props) {
                                     breakPoints={breakPoints}>
                                     {
                                         data_arr[i] && data_arr[i].filter((val) => {
-                                            let res= {}
+                                            let res;
                                             if (props.FilterParams.product === "" && props.FilterParams.state === "" && props.FilterParams.city === "")
                                                 res = val;
                                             else if (val.product_name.includes(props.FilterParams.product) &&
