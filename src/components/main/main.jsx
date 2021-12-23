@@ -77,12 +77,15 @@ export default function Main(props) {
                                     breakPoints={breakPoints}>
                                     {
                                         data_arr[i] && data_arr[i].filter((val) => {
+                                            let res= {}
                                             if (props.FilterParams.product === "" && props.FilterParams.state === "" && props.FilterParams.city === "")
-                                                return val;
+                                                res = val;
                                             else if (val.product_name.includes(props.FilterParams.product) &&
                                                 val.address.state.includes(props.FilterParams.state) &&
                                                 val.address.city.includes(props.FilterParams.city))
-                                                return val;
+                                                res = val;
+
+                                                return res;
                                         }).map((data, index) => {
                                             return (
                                                 <Item
