@@ -6,7 +6,8 @@ const breakPoints = [
     { width: 1, itemsToShow: 1 },
     { width: 550, itemsToShow: 2, itemsToScroll: 2 },
     { width: 768, itemsToShow: 3 },
-    { width: 1200, itemsToShow: 4 }
+    { width: 1200, itemsToShow: 4 },
+    { width: 1800, itemsToShow: 5 }
 ];
 export default function Main(props) {
     const [groupedData, setGroupedData] = useState([])
@@ -79,11 +80,11 @@ export default function Main(props) {
                                         data_arr[i] && data_arr[i].filter((val) => {
                                             let res;
                                             if (props.FilterParams.product === "" && props.FilterParams.state === "" && props.FilterParams.city === "")
-                                                res = val;
+                                                res= val;
                                             else if (val.product_name.includes(props.FilterParams.product) &&
                                                 val.address.state.includes(props.FilterParams.state) &&
                                                 val.address.city.includes(props.FilterParams.city))
-                                                res = val;
+                                                res= val;
 
                                                 return res;
                                         }).map((data, index) => {
