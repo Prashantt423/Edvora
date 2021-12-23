@@ -134,7 +134,7 @@ export default function Leftbar(props) {
                 <div className="left-bar-box">
                     <FormControl sx={{ m: 1, minWidth: 150, backgroundColor: "#292929", borderRadius: "4px" }}>
                         <Select
-                            sx={{ color: "white", fontSize: "15px", width: "200px" }}
+                            sx={{ color: "white", fontSize: "15px", width: "17vw" }}
                             value={products}
                             onChange={handleChange1}
                             displayEmpty
@@ -163,7 +163,7 @@ export default function Leftbar(props) {
                 <div className="left-bar-box">
                     <FormControl sx={{ m: 1, minWidth: 150, backgroundColor: "#292929", borderRadius: "4px", overflow: "hidden" }}>
                         <Select
-                            sx={{ color: "white", fontSize: "15px", width: "200px" }}
+                            sx={{ color: "white", fontSize: "15px",  width: "17vw" }}
                             value={state}
                             onChange={handleChange2}
                             displayEmpty
@@ -190,7 +190,7 @@ export default function Leftbar(props) {
                 <div className="left-bar-box">
                     <FormControl sx={{ m: 1, minWidth: 150, backgroundColor: "#292929", borderRadius: "4px" }}>
                         <Select
-                            sx={{ color: "white", fontSize: "15px", width: "200px" }}
+                            sx={{ color: "white", fontSize: "15px",  width: "17vw" }}
                             value={city}
                             onChange={handleChange3}
                             displayEmpty
